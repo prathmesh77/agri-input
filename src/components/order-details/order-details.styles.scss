@@ -1,0 +1,18 @@
+.executing-order-header {
+  clear: both;
+
+  .input-order {
+    float: left;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+  .batch {
+    float: left;
+    margin-left: 300px;
+    font-weight: bolder;
+  }
+}
+.order-divider {
+  margin: 5px 0 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}

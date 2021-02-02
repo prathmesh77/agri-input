@@ -1,0 +1,30 @@
+.logo {
+  height: auto;
+  margin: 16px;
+
+  h3 {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.menu {
+  background-color: #484848;
+  .menu-item .items {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+  }
+}
+
+hr {
+  color: white;
+  height: 1px;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent;
+}
