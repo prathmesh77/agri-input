@@ -2,6 +2,15 @@
   padding: 5px 0;
   background: #a1a1a1;
 
+  .row-content {
+    background: #a1a1a1;
+    margin-left: 40px;
+    font-weight: 600;
+    text-align: center;
+    .batch-by {
+      padding-left: 10px;
+    }
+  }
   .order-row-upper-arraw {
     display: inline-block;
     padding-left: 10px;

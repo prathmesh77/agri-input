@@ -10,12 +10,11 @@ import './order-row-items.styles.scss';
 
 const OrderRowItems = ({ order, toggleHidden, index }) => {
     
-    const style = { background: '#A1A1A1',marginLeft:'4', fontWeight: 600 };
     return (
         <>
             <Row justify="space-between" gutter={16}>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
+                    <div className='row-content'>
                         {order.batchId}
                         <span className='order-row-upper-arraw'>
                             <UpSquareFilled onClick={()=>toggleHidden(index) } />
@@ -26,13 +25,13 @@ const OrderRowItems = ({ order, toggleHidden, index }) => {
               
                 <Col className="gutter-row" span={8}>
                
-                    <div style={style}>   
+                <div className='row-content'>
                         <Avatar size="large" src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />    
                         <span className='batch-by'>{order.batchBy}</span>
                     </div>
                 </Col>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>{ order.refListId}</div>
+                <div className='row-content'>{ order.refListId}</div>
                 </Col>
             </Row>
         </>

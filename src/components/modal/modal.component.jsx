@@ -2,7 +2,6 @@ import React from 'react';
 import { Modal } from 'antd';
 
 const ModalComponent = ({ rowDetails,toggleModal }) => {
-    console.log(rowDetails);
     const { hidden, modalData } = rowDetails;
     
     return (

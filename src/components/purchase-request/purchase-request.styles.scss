@@ -1,8 +1,17 @@
 .site-layout {
-  .site-layout-background {
+  margin-left: 250px;
+  background: white;
+
+  .site-layout-header {
+    padding: 0 25px;
     background: #fff;
     h2 {
       font-weight: bold;
     }
+  }
+
+  .site-layout-content {
+    padding-left: 24px;
+    text-align: "center";
   }
 }
