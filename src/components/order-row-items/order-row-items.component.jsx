@@ -5,33 +5,35 @@ import { Divider } from 'antd';
 
 import { toggleHidden } from '../../redux/order/order.action';
 
-import { UpSquareFilled } from '@ant-design/icons';
+import { UpSquareFilled,FileExcelOutlined } from '@ant-design/icons';
 import './order-row-items.styles.scss';
 
 const OrderRowItems = ({ order, toggleHidden, index }) => {
     
     return (
         <>
-            <Row justify="space-between" gutter={16}>
+            <Row justify="space-between" gutter={16} style={{width:'100%'}}>
                 <Col className="gutter-row" span={8}>
                     <div className='row-content'>
                         {order.batchId}
-                        <span className='order-row-upper-arraw'>
-                            <UpSquareFilled onClick={()=>toggleHidden(index) } />
-                        </span>
+                        <UpSquareFilled className='icon' onClick={() => toggleHidden(index)}/> 
+                    
                     </div>
                     <Divider className='divider' type="vertical" />
                 </Col>
               
                 <Col className="gutter-row" span={8}>
-               
-                <div className='row-content'>
+                    <div className='row-content'>
                         <Avatar size="large" src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />    
                         <span className='batch-by'>{order.batchBy}</span>
                     </div>
                 </Col>
+
                 <Col className="gutter-row" span={8}>
-                <div className='row-content'>{ order.refListId}</div>
+                    <div className='row-content'>
+                        <FileExcelOutlined className='icon'/>
+                        {order.refListId}
+                    </div>
                 </Col>
             </Row>
         </>
